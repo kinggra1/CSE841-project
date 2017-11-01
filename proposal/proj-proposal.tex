@@ -1,0 +1,66 @@
+
+
+\documentclass{sig-alternate-05-2015}
+
+% Include useful packages
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{float}
+
+
+\begin{document}
+
+% Copyright
+\setcopyright{acmcopyright}
+
+
+\title{CSE 841: Project Proposal}
+\numberofauthors{1} 
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+\alignauthor
+Grant King\\
+       \email{kinggra1@msu.edu}
+}
+% There's nothing stopping you putting the seventh, eighth, etc.
+% author on the opening page (as the 'third row') but we ask,
+% for aesthetic reasons that you place these 'additional authors'
+% in the \additional authors block, viz.
+\date{17 October 2017}
+% Just remember to make sure that the TOTAL number of authors
+% is the number that will appear on the first page PLUS the
+% number that will appear in the \additionalauthors section.
+
+%\begin{figure*}[t]
+%\centering
+%\includegraphics[width=\textwidth]{images/SkinnyDipExample}
+%caption{The running example used by Maurus, et al. throughout %\cite{skinnydip}}
+%\label{fig:sdexample}
+%\end{figure*}
+
+\maketitle
+\section{Problem}
+For my CSE 841 Project, I am interested in pursuing methods of calculating semantic similarity in short texts. Short texts in particular being a constrained problem where traditional larger document comparison methods underperform\cite{SemanticSimilarity}. I want to apply and compare a variety of methods for semantic comparison between short sentences, including traditional methods, but with a primary focus on word embeddings discussed in recent literature\cite{ShortTextWord}. It is my belief that this is a reasonably approachable topic with a wide breadth of literature and is suitable for a course project. I plan on using existing implementations for word embeddings (e.g. word2vec) and for some of the resulting text similarity calculations.
+
+%\begin{figure*}[t]
+%\centering
+%\includegraphics[width=\textwidth]{images/timeline}
+%caption{Tentative Project Milestones}
+%\label{fig:milestones}
+%\end{figure*}
+
+\section{Data}
+I plan on performing my evaluation on the Microsoft Research Paraphrase Corpus \cite{MSRParaphrase}. This will involve a process of thresholding similarity comparisons to classify whether or not short descriptions are paraphrases of one another. I may also possibly work with a similar corpus collected from Twitter data\cite{Twitter}.
+
+\bibliography{proj-proposal}
+\bibliographystyle{unsrt}
+\end{document}
